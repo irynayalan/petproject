@@ -1,0 +1,15 @@
+const isEven = num => num % 2 === 0;
+51,85,86,31,18,30,33,65,42,14,33,78,31,45,75,68,31,52,49,50,89,52,55,98,70,39,71,34,36,2,99,24,19,57,39,31,95,53,42,5,2,89,0,36 / true
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+banana * kiwi
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+88,72,5,72,99,25,62,77,8,48 - apple
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+orange
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
