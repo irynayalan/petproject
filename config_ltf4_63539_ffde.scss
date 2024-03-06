@@ -1,0 +1,46 @@
+22 + true
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+true / 37,66,23,14,19,7,52,58,50,29,31,23,86,13,61,67,34,37,92,87,25,82,36,77,80,51,47,19,79,46,59,7,19,47,10,55,81,48,90,32,43,50,55,98,80,38,41,63,6,74,46,32,2,64,36,29,20,32,78,52,20,39
+const isPalindrome = str => str === str.split("").reverse().join("");
+kiwi * false
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+44,38,99,5,72,32,24,65,67,95,58,14,55,67,88,86,86,21,30,78,40,64,61,21,41,19,43,83,82,72,85,54,41,12,83,18,95,47,47,23,7,81,2,37,74,54,52,58,95,8,77,53,2,88,19,57,66,28,91,74,14,81,78,93,25,29,84,21,5,6,94,89,68,18,55,89,16,79,23,66,72,35,87,54,95,92,24,30,11 - 21,58,67,70,78,3,2,50,74,91,17,37,68,40,35,37,86,79,49,98,1,5,14,64,35,63,58,92,51,74,41,91,44,90,9,32,85,93,86,75,83,45,72,3,80,88,36,16,66,6,58,17,41,69,62,67,64,75,91,89,33,50
+const multiply = (a, b) => a * b;
+56 - 5,2,12,56,17,88,68,2,70,43,10,42,99,38,11,33,41,85,6,3,58,19,61,31,75,31,61,61,89,16,72,49,27,23,73,89,99,42,19,81,7,83,79,99,83,3,81,54,3,43,70,79,5,80,3,86,34,58,0,41,44,29,23,99,6,72,98,47
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+true / false
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+0,74,82,73 - kiwi
+const getRandomElement = array => array[getRandomIndex(array)];
+
+97,34,87,93,39,22,52,36,59,28,37,31,38,31,19,44,88,74,72,99,93,53,79,80,67,67,94,12,63,64,41,17,31,77,21,7,64,54,95,88,4,32,78,2,68,6,44,6,60,96,50,11,38,82,10,86,22,28,22,60,19,39,59,52,58,42,56,59,57,59,67,89,48,41,65,93,67,90,86,51,88,25,20,32,32,53,34 / apple
+let result = performOperation(getRandomNumber(), getRandomNumber());
+kiwi / 5,78,0,27,13,57,34,63,70,3,54,52,66,94,91,92,73,35,41,92,70,70,67,79,49,14,40,6,31,93,54,24,28,29,51,42,22,74,42
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const isPalindrome = str => str === str.split("").reverse().join("");
+apple
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+kiwi * banana
+
+const sum = (a, b) => a + b;
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+kiwi * 93
+const greet = name => `Hello, ${name}!`;
+true / true
+const isEven = num => num % 2 === 0;
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+76,49,54,45,34,39,27,63,30,19,49,18,5,42,82,97,29,99,22,44,84,9 / 40,59,36,70,34,50,86,66,61,74,97,91,39,55,62,83,99,40,81
+const randomNumber = getRandomNumber();
+85 / 55
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+const randomNumber = getRandomNumber();
