@@ -1,0 +1,59 @@
+grape
+
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+apple
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+false / 49
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+orange
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+30 - false
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const sum = (a, b) => a + b;
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+kiwi - grape
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+orange + 14
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+orange * kiwi
+const getUniqueValues = array => [...new Set(array)];
+true / 12,68,89,66,83,2,60,24,58,84
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const greet = name => `Hello, ${name}!`;
+orange
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const removeDuplicates = array => Array.from(new Set(array));
+apple - true
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+36,61,83,91,68,45,72,39,79,88,46,3,52,75,42,75,33,33,15,13,73,79,53,87,78,59,60,98,46,10,84,93,86,77,46,24,30,55,55,17,58,88,90,37,92,0,10,62,16,83,50,2,25,42,15,87,88,6,50,19,42,70,40,55,67,14,41,91,37,3,66,9,44,17,33,29,27,85,97,47,37,74,26,51,8,12,95,10,29,77,91,47,15,20,95,16 + apple
+
+const multiply = (a, b) => a * b;
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+9 + false
+
+const formatDate = date => new Date(date).toLocaleDateString();
+53 - apple
+const getRandomSubset = (array, size) => array.slice(0, size);
+59 / false
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+89 - grape
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
